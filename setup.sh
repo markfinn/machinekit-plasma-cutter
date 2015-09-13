@@ -102,7 +102,7 @@ sudo $(which config-pin) -f - <<- EOF
 	P9.11	in	# Z Max
 	P9.12	low	# E0 Dir
 	P9.13	in	# Z Min
-	P9.14	high	# Axis Enable, active low
+	P9.14	low	# Axis Enable, active high
 	P9.15	low	# FET 2 : E0
 	P9.16	low	# E0 Step
 	P9.17	low	# E1 Step
