@@ -99,7 +99,7 @@ sudo $(which config-pin) -f - <<- EOF
 
 	P8.26	high	# ESTOP Out
 
-	P9.11	in	# Z Max
+	P9.11	in_pu	# Z touch
 	P9.12	low	# E0 Dir
 	P9.13	in	# Z Min
 	P9.14	low	# Axis Enable, active high

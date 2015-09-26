@@ -210,21 +210,21 @@ newsig limit-x-max bit
 newsig limit-y-min bit
 newsig limit-y-max bit
 newsig limit-z-min bit
-newsig limit-z-max bit
+newsig limit-z-touch bit
 
 net limit-x-min <= bb_gpio.p8.in-08
 net limit-x-max <= bb_gpio.p8.in-07
 net limit-y-min <= bb_gpio.p8.in-10
 net limit-y-max <= bb_gpio.p8.in-09
 net limit-z-min <= bb_gpio.p9.in-13
-net limit-z-max <= bb_gpio.p9.in-11
+net limit-z-touch <= bb_gpio.p9.in-11
 
 # Adjust as needed for your switch polarity
 setp bb_gpio.p8.in-08.invert 1
 setp bb_gpio.p8.in-07.invert 1
 setp bb_gpio.p8.in-10.invert 1
 setp bb_gpio.p8.in-09.invert 1
-setp bb_gpio.p9.in-11.invert 1
+setp bb_gpio.p9.in-11.invert 0
 setp bb_gpio.p9.in-13.invert 1
 
 # Uncomment if you actually have limit switches setup
