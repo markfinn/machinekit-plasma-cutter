@@ -216,8 +216,8 @@ net limit-x-min <= bb_gpio.p8.in-08
 net limit-x-max <= bb_gpio.p8.in-07
 net limit-y-min <= bb_gpio.p8.in-10
 net limit-y-max <= bb_gpio.p8.in-09
-net limit-z-min <= bb_gpio.p9.in-13
-net limit-z-touch <= bb_gpio.p9.in-11
+net limit-z-max <= bb_gpio.p9.in-13
+net limit-z-min <= bb_gpio.p9.in-11
 
 # Adjust as needed for your switch polarity
 setp bb_gpio.p8.in-08.invert 1
@@ -235,7 +235,7 @@ setp bb_gpio.p9.in-13.invert 1
 #net limit-y-min => axis.1.home-sw-in
 #net limit-y-min => axis.1.neg-lim-sw-in
 #net limit-y-max => axis.1.pos-lim-sw-in
-#net limit-z-min => axis.2.home-sw-in
+net limit-z-min => axis.2.home-sw-in
 #net limit-z-min => axis.2.neg-lim-sw-in
 #net limit-z-max => axis.2.pos-lim-sw-in
 
